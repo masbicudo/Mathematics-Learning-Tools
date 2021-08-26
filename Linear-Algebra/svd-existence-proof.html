@@ -39,6 +39,7 @@ card {
 }
 card::before {
   content: attr(title);
+  white-space: pre-wrap;
   display: block;
   text-align: center;
   margin: 0 0 10px 0;
@@ -46,11 +47,13 @@ card::before {
 .margin-top-bottom-10px {
   margin:  10px 0 10px 0;
 }
-h1 {
+.title {
   background-color: Firebrick;
+  font-family: 'Lobster Two', cursive;
+}
+h1 {
   color: white;
   margin: 0;
-  font-family: 'Lobster Two', cursive;
   padding: 0.4rem 0 0.8rem 0.4em;
   text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
   text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
@@ -62,16 +65,38 @@ content {
   margin: 0.2rem 1em 0;
   display: block;
 }
+.small {
+  font-size: 70%;
+}
+.top-link {
+  padding: 0 0 0.6rem 1rem;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: lightsalmon;
+  box-sizing: border-box;
+  border-bottom: 3px solid crimson;
+}
+a:hover {
+  color: white;
+  border-bottom: 3px solid bisque;
+}
 </style>
 </head>
 
 <body>
 
-<h1>Prova de existência do SVD</h1>
-
+  <div class="title">
+    <h1>SVD existence proof <span class="small">(Interactive tool)</span></h1>
+    <div class="small" style="float: right; margin-right: 2rem; color: khaki;">by Miguel Angelo</div>
+    <span class="top-link"><a href="/Mathematics-Learning-Tools/"><span class="small">More</span> math <span class="small">tools</span></a></span>
+    <span class="top-link"><a href="https://www.masbicudo.com"><span class="small">www</span>.masbicudo.<span class="small">com</span></a></span>
+    <span class="top-link"><a href="/Mathematics-Learning-Tools/todo#svd-existence-proof"><span class="small">To do</span></a></span>
+  </div>
 <content>
 
-<card title="Vetores">
+<card title="Vectors">
 <canvas id="canvas-vetores" width="401" height="401"></canvas>
 <!-- <div><input id="" type="checkbox">alinhar com a grade</input></div> -->
 <!-- <div class="margin-top-bottom-10px"> -->
@@ -80,16 +105,17 @@ content {
 <!-- </div> -->
 </card>
 
-<card title="Operador">
+<card title="Operator
+(Matrix A)">
 <canvas id="canvas-operador" width="201" height="201"></canvas>
 </card>
 
-<card title="Resultado">
+<card title="Result">
 <canvas id="canvas-resultado" width="401" height="401"></canvas>
 </card>
 
 <div class="margin-top-bottom-10px">
-  Ângulo <span class="inline-block width-6em"><input id="range-angulo" type="range" min="0" max="90" step="1" data-rangeSlider></span>
+  Angle <span class="inline-block width-6em"><input id="range-angulo" type="range" min="0" max="90" step="1" data-rangeSlider></span>
   <span id="angle-text">0 deg</span>
 </div>
 
@@ -313,8 +339,8 @@ var vec2 = {x:0,y:1}
 var vecRot1 = Object.assign({}, vec1)
 var vecRot2 = Object.assign({}, vec2)
 
-var op1 = {x:1,y:2}
-var op2 = {x:0,y:2}
+var op1 = {x:2,y:2}
+var op2 = {x:0,y:3}
 
 var result1 = {x:1,y:1}
 var result2 = {x:1,y:-1}

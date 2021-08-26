@@ -8,7 +8,7 @@ layout: default
 This is my mathematics learning tools website. It contains interactive tools
 to help learning mathematics more fun with graphic, numeric and symbolic tools.
 
-- [SVD Proof](Linear-Algebra/svd-existence-proof.html)
+- [SVD Existence Proof (Interactive tool)](Linear-Algebra/svd-existence-proof)
 
 ## To Do
 

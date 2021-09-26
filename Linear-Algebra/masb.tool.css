@@ -1,0 +1,131 @@
+/* ref: https://fonts.google.com/specimen/Lobster+Two?preview.text=Prova%20de%20exist%C3%AAncia%20do%20SVD&preview.text_type=custom
+ref: https://html-css-js.com/css/generator/text-shadow/
+ref: https://en.wikipedia.org/wiki/Web_colors */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+
+html {
+    font-size: 2em;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.width-9em {
+    width: 9rem;
+}
+
+.width-6em {
+    width: 6rem;
+}
+
+card {
+    vertical-align: middle;
+    display: inline-block;
+    visibility: visible;
+    border-box: collapse;
+    --border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+card::before {
+    content: attr(title);
+    white-space: pre-wrap;
+    display: block;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.margin-top-bottom-10px {
+    margin: 10px 0 10px 0;
+}
+
+.title {
+    background-color: Firebrick;
+    font-family: 'Lobster Two', cursive;
+    position: relative;
+    overflow: hidden;
+}
+
+.title>* {
+    vertical-align: middle;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    padding: 0.4rem 0 0.8rem 0.4em;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+body {
+    margin: 0;
+}
+
+content {
+    margin: 0.2rem 1em 0;
+    display: block;
+}
+
+.small {
+    font-size: 70%;
+}
+
+.top-link {
+    padding: 0 0 0.6rem 1rem;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: lightsalmon;
+    box-sizing: border-box;
+    border-bottom: 3px solid crimson;
+}
+
+a:hover {
+    color: white;
+    border-bottom: 3px solid bisque;
+}
+
+.masb-link-0 {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.masb-link {
+    float: right;
+    /* margin-right: 2rem; */
+    color: khaki;
+    /* position: absolute; */
+    /* right: 2rem;
+    bottom: 1em; */
+    margin: 0 1rem 0.5rem 1rem;
+    vertical-align: middle;
+}
+
+.masb-link a {
+    color: khaki;
+    border-bottom: 3px solid rgb(238, 141, 111);
+}
+
+.masb-link a:hover {
+    color: rgb(248, 242, 184);
+    border-bottom: 3px solid bisque;
+}
+
+a:visited {
+    border-bottom-color: Firebrick;
+}
+
+.notes {
+    margin: 0 1em 1em 2em;
+    padding: 0.25em;
+    font-size: 14pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: khaki;
+    display: inline-block;
+}

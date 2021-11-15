@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First three.js Project</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<content>
+
+    <card title="Vectors">
+        <canvas id="canvas-vetores" width="401" height="401"></canvas>
+        <!-- <div><input id="" type="checkbox">alinhar com a grade</input></div> -->
+        <!-- <div class="margin-top-bottom-10px"> -->
+        <!-- Zoom <span class="inline-block width-6em"><input id="range-zoom-1" type="range" min="10" max="200" step="10" value="100" data-rangeSlider></span> -->
+        <!-- <span id="zoom-1-text">100%</span> -->
+        <!-- </div> -->
+    </card>
+
+    <card title="Operator
+        (Matrix A)">
+        <canvas id="canvas-operador" width="201" height="201"></canvas>
+    </card>
+
+    <card title="Result">
+        <canvas id="canvas-resultado" width="401" height="401"></canvas>
+    </card>
+
+    <div class="margin-top-bottom-10px">
+        Instructions:
+        <p>
+            Use mouse wheel to zoom in and out. Drag with the mouse to rotate the camera around.
+        </p>
+        <p>
+            To adjust the angles of the rotation basis in the left view port,
+            press the keys <kbd>1</kbd>, <kbd>2</kbd> or <kbd>3</kbd> and then
+            start dragging inside that view port doing circular movements with
+            the cursor. Small circular movements will rotate slowly, faster
+            circular movements will rotate faster.
+        </p>
+    </div>
+</content>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

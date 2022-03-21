@@ -1,6 +1,7 @@
 import * as THREE from 'https://cdn.skypack.dev/three'
 import { TrackballControls } from 'https://cdn.skypack.dev/three/examples/jsm/controls/TrackballControls'
-import { OrbitControls } from 'https://cdn.skypack.dev/three/examples/jsm/controls/OrbitControls'
+// import { OrbitControls } from 'https://cdn.skypack.dev/three/examples/jsm/controls/OrbitControls'
+import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three-orbitcontrols@2.110.3/OrbitControls.js'
 
 import { Arrow } from './arrow.js'
 import { combine } from './func.js'

@@ -42,7 +42,16 @@
         </p>
     </div>
 </content>
-<script type="importmap" src="import-map.importmap"></script>
+<!-- <script type="importmap" src="import-map.importmap"></script> -->
+<script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.skypack.dev/three@v0.138.2",
+            "three/examples/jsm/controls/TrackballControls": "https://cdn.skypack.dev/three@v0.138.2/examples/jsm/controls/TrackballControls",
+            "three/examples/jsm/controls/OrbitControls": "https://cdn.skypack.dev/three@v0.138.2/examples/jsm/controls/OrbitControls"
+        }
+    }
+</script>
 <script type="module" src="./js/main.js"></script>
 </body>
 </html>

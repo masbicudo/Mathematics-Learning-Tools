@@ -1,4 +1,4 @@
-import * as THREE from 'https://cdn.skypack.dev/three'
+import * as THREE from 'three'
 
 export function makeGeometry(positions, normals, triangles) {
     const geometry = new THREE.BufferGeometry()

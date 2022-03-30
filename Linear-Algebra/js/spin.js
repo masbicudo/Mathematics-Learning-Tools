@@ -6,7 +6,7 @@
  * @author Paul Elliott / http://vizworkshop.com
  */
 
-import * as THREE from 'https://cdn.skypack.dev/three'
+import * as THREE from 'three'
 
 
 export var SpinControls = function (object, trackBallRadius, camera, domElement) {
